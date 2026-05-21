@@ -1,0 +1,195 @@
+/* =============================================== */
+/* TELA 3 — GRUPO DE ESTUDO                       */
+/* =============================================== */
+.group-hero {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  align-items: end;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 28px;
+}
+
+.group-code-card {
+  background: var(--forest);
+  color: var(--cream);
+  padding: 18px 20px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.group-code-card::before {
+  content: '';
+  position: absolute;
+  top: -20px; right: -20px;
+  width: 80px; height: 80px;
+  background: var(--forest-light);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.group-code-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--amber-soft);
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.group-code-value {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.group-code-action {
+  font-size: 10px;
+  color: var(--cream);
+  opacity: 0.65;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.group-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border-soft);
+  border: 1px solid var(--border-soft);
+  margin-bottom: 28px;
+}
+
+.stat {
+  background: var(--paper);
+  padding: 16px 18px;
+}
+
+.stat-num {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--forest);
+}
+
+.stat-num .small {
+  font-size: 14px;
+  color: var(--muted);
+  margin-left: 2px;
+}
+
+.stat-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.group-tabs {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 20px;
+}
+
+.group-tab {
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.group-tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--amber);
+}
+
+.group-tab .count {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted-soft);
+  margin-left: 4px;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.case-card {
+  background: var(--paper);
+  border: 1px solid var(--border-soft);
+  border-radius: 3px;
+  padding: 16px;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.case-card:hover {
+  border-color: var(--forest);
+  transform: translateY(-1px);
+}
+
+.case-card-spec {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11px;
+  color: var(--amber);
+  margin-bottom: 6px;
+}
+
+.case-card-title {
+  font-family: var(--serif);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.case-card-patient {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.case-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.case-card-author {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.case-card-author .av {
+  width: 16px; height: 16px;
+  font-size: 8px;
+  border-radius: 50%;
+  background: var(--forest);
+  color: var(--cream);
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}

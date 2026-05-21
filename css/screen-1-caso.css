@@ -1,0 +1,185 @@
+/* =============================================== */
+/* TELA 1 — CASO CLÍNICO                          */
+/* =============================================== */
+.case-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.case-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 40px;
+  margin-top: 28px;
+}
+
+.case-section {
+  margin-bottom: 28px;
+}
+
+.case-section h3 {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.case-section p {
+  color: var(--ink-soft);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+.vitals-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--border-soft);
+  border: 1px solid var(--border-soft);
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.vital {
+  background: var(--paper);
+  padding: 12px;
+}
+
+.vital-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.vital-value {
+  font-family: var(--mono);
+  font-size: 15px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.vital-value .unit {
+  font-size: 10px;
+  color: var(--muted);
+  margin-left: 2px;
+  font-weight: 400;
+}
+
+.conduta-list {
+  list-style: none;
+  counter-reset: conduta;
+}
+
+.conduta-list li {
+  counter-increment: conduta;
+  padding: 8px 0 8px 32px;
+  position: relative;
+  border-bottom: 1px dashed var(--border-soft);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.conduta-list li:last-child { border-bottom: none; }
+
+.conduta-list li::before {
+  content: counter(conduta, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--amber);
+  font-weight: 500;
+}
+
+/* Sidebar */
+.case-sidebar {
+  border-left: 1px solid var(--border-soft);
+  padding-left: 32px;
+}
+
+.info-block {
+  margin-bottom: 24px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border-soft);
+  font-size: 12px;
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.info-key {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+}
+
+.info-val {
+  font-family: var(--mono);
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.info-val.serif {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 13px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 3px 9px;
+  background: var(--forest-pale);
+  color: var(--forest);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.tag.amber { background: var(--amber-pale); color: var(--amber); }
+
+.media-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-soft);
+  font-size: 12px;
+}
+
+.media-item:last-child { border-bottom: none; }
+
+.media-icon {
+  width: 28px; height: 28px;
+  background: var(--cream-dark);
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.media-name {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+  flex: 1;
+}

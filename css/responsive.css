@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+  .case-layout, .group-hero, .feed-layout, .dash-layout, .dash-hero, .login-layout { grid-template-columns: 1fr; }
+  .case-sidebar, .feed-sidebar, .dash-sidebar { border-left: none; padding-left: 0; border-top: 1px solid var(--border-soft); padding-top: 24px; }
+  .dash-hero-right { border-left: none; padding-left: 0; text-align: left; }
+  .vitals-grid, .group-stats, .metric-grid { grid-template-columns: repeat(2, 1fr); }
+  .case-grid, .continue-grid { grid-template-columns: 1fr; }
+  .specialty-legend { grid-template-columns: repeat(2, 1fr); }
+  .login-left, .login-right { padding: 36px 28px; }
+  .login-quote-text { font-size: 22px; }
+}
