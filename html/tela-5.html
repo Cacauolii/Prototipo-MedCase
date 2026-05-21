@@ -1,0 +1,294 @@
+<!-- =============================================== -->
+  <!-- TELA 5 — DASHBOARD / INÍCIO                    -->
+  <!-- =============================================== -->
+  <section class="screen" id="screen-5">
+    <div class="app-bar">
+      <div class="app-bar-left">
+        <div class="app-bar-logo">MedCase</div>
+        <nav class="app-nav">
+          <a href="#" class="current">Início</a>
+          <a href="#">Meus Casos</a>
+          <a href="#">Grupos</a>
+          <a href="#">Comunidade</a>
+        </nav>
+      </div>
+      <div class="app-bar-right">
+        <input class="app-search" placeholder="Buscar casos, tags, especialidades…">
+        <div class="avatar">CS</div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- Hero -->
+      <div class="dash-hero">
+        <div class="dash-hero-left">
+          <h1>Bom dia, <em>Cauan.</em></h1>
+          <p>Você tem <strong>3 evoluções pendentes</strong> em 2 casos ativos e <strong>4 menções</strong> não lidas em seus grupos. Bom estudo.</p>
+        </div>
+        <div class="dash-hero-right">
+          <div class="dash-hero-date">17 de maio de 2026</div>
+          <div class="dash-hero-weekday">Domingo</div>
+          <div class="dash-hero-temp">19º · Belo Horizonte</div>
+        </div>
+      </div>
+
+      <!-- Metrics -->
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-label">Casos Ativos</div>
+          <div class="metric-value">12</div>
+          <div class="metric-trend up">↑ 3 esta semana</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Evoluções (7d)</div>
+          <div class="metric-value">23</div>
+          <div class="metric-trend up">↑ 18% vs semana passada</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Grupos</div>
+          <div class="metric-value">4</div>
+          <div class="metric-trend">2 ativos hoje</div>
+        </div>
+        <div class="metric-card highlight">
+          <div class="metric-label">Endossos Recebidos</div>
+          <div class="metric-value">47<span class="unit">⭐</span></div>
+          <div class="metric-trend up">↑ Top 8% da turma</div>
+        </div>
+      </div>
+
+      <div class="dash-layout">
+        <div class="dash-main">
+
+          <!-- Continue de onde parou -->
+          <div class="dash-section">
+            <div class="dash-section-header">
+              <h2 class="dash-section-title">Continue de onde <em>parou</em></h2>
+              <a class="dash-section-link">Ver todos os casos →</a>
+            </div>
+            <div class="continue-grid">
+
+              <div class="continue-card">
+                <span class="continue-card-status pending">Pendente</span>
+                <div class="continue-card-spec">Cardiologia</div>
+                <div class="continue-card-title">SCA-CSST com dor irradiada para mandíbula</div>
+                <div class="continue-card-meta">
+                  <span>MED-0847</span>
+                  <span>editado há 12min</span>
+                </div>
+              </div>
+
+              <div class="continue-card">
+                <span class="continue-card-status active">Em andamento</span>
+                <div class="continue-card-spec">Endocrinologia</div>
+                <div class="continue-card-title">Cetoacidose diabética em DM1 jovem</div>
+                <div class="continue-card-meta">
+                  <span>MED-0801</span>
+                  <span>3 evoluções</span>
+                </div>
+              </div>
+
+              <div class="continue-card">
+                <span class="continue-card-status review">Revisão</span>
+                <div class="continue-card-spec">Pneumologia</div>
+                <div class="continue-card-title">TEP submaciço em pós-operatório</div>
+                <div class="continue-card-meta">
+                  <span>MED-0792</span>
+                  <span>6 evoluções</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Activity feed -->
+          <div class="dash-section">
+            <div class="dash-section-header">
+              <h2 class="dash-section-title">Atividade <em>dos seus grupos</em></h2>
+              <a class="dash-section-link">Ver tudo →</a>
+            </div>
+            <div class="activity-feed">
+
+              <div class="activity-row">
+                <div class="activity-avatar">GH</div>
+                <div class="activity-text"><strong>Gabriel Henrique</strong> adicionou uma evolução em <a>SCA-CSST · J.S.M.</a> no grupo <strong>Cardiologia Clínica</strong></div>
+                <div class="activity-time">há 14min</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar muted">ML</div>
+                <div class="activity-text"><strong>Maria Luiza</strong> publicou um novo caso: <a>PAC grave com derrame parapneumônico</a></div>
+                <div class="activity-time">há 1h</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar amber">@</div>
+                <div class="activity-text">Você foi mencionado por <strong>Profa. Dra. Ana Lima</strong> em <a>Cetoacidose diabética</a></div>
+                <div class="activity-time">há 2h</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar">GH</div>
+                <div class="activity-text"><strong>Gabriel Henrique</strong> endossou seu caso <a>SCA-CSST com dor irradiada</a></div>
+                <div class="activity-time">há 4h</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar muted">ML</div>
+                <div class="activity-text"><strong>Maria Luiza</strong> entrou no grupo <strong>Emergências Clínicas — 2026/1</strong></div>
+                <div class="activity-time">há 1d</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar">SR</div>
+                <div class="activity-text"><strong>Sistema</strong> · O grupo <strong>Cardiologia Clínica</strong> atingiu <strong>24 casos compartilhados</strong> 🎉</div>
+                <div class="activity-time">há 1d</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Specialty distribution -->
+          <div class="dash-section" style="margin-bottom: 0;">
+            <div class="dash-section-header">
+              <h2 class="dash-section-title">Seus casos <em>por especialidade</em></h2>
+              <a class="dash-section-link">12 casos no total</a>
+            </div>
+
+            <div class="specialty-bar">
+              <div class="specialty-seg" style="background: #1f3a32; width: 33%;">33%</div>
+              <div class="specialty-seg" style="background: #c87f3b; width: 25%;">25%</div>
+              <div class="specialty-seg" style="background: #4a6d8c; width: 17%;">17%</div>
+              <div class="specialty-seg" style="background: #8c4a6d; width: 12%;">12%</div>
+              <div class="specialty-seg" style="background: #4a7d5a; width: 8%;">8%</div>
+              <div class="specialty-seg" style="background: #7a7368; width: 5%;">5%</div>
+            </div>
+
+            <div class="specialty-legend">
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #1f3a32;"></span>
+                <span>Cardiologia</span>
+                <span class="specialty-count">4</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #c87f3b;"></span>
+                <span>Endocrinologia</span>
+                <span class="specialty-count">3</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #4a6d8c;"></span>
+                <span>Pneumologia</span>
+                <span class="specialty-count">2</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #8c4a6d;"></span>
+                <span>Neurologia</span>
+                <span class="specialty-count">1</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #4a7d5a;"></span>
+                <span>Gastroenterologia</span>
+                <span class="specialty-count">1</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #7a7368;"></span>
+                <span>Nefrologia</span>
+                <span class="specialty-count">1</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="dash-sidebar">
+
+          <div class="widget">
+            <div class="widget-title">
+              <span>Meus grupos</span>
+              <span class="meta">4 ativos</span>
+            </div>
+
+            <div class="group-mini">
+              <div class="group-mini-icon">C</div>
+              <div>
+                <div class="group-mini-name">Cardiologia Clínica</div>
+                <div class="group-mini-meta">12 membros · 24 casos</div>
+              </div>
+              <span class="group-mini-badge">3</span>
+            </div>
+
+            <div class="group-mini">
+              <div class="group-mini-icon amber">E</div>
+              <div>
+                <div class="group-mini-name">Emergências Clínicas</div>
+                <div class="group-mini-meta">18 membros · 41 casos</div>
+              </div>
+              <span class="group-mini-badge">1</span>
+            </div>
+
+            <div class="group-mini">
+              <div class="group-mini-icon info">M</div>
+              <div>
+                <div class="group-mini-name">MedCase Bocaiuva</div>
+                <div class="group-mini-meta">8 membros · 12 casos</div>
+              </div>
+            </div>
+
+            <div class="group-mini">
+              <div class="group-mini-icon muted">R</div>
+              <div>
+                <div class="group-mini-name">Revisão · Prova HU</div>
+                <div class="group-mini-meta">6 membros · 9 casos</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="widget">
+            <div class="widget-title">
+              <span>Próximas entregas</span>
+            </div>
+
+            <div class="deadline-item">
+              <div class="deadline-date">Seg · 19.mai · 23h59</div>
+              <div class="deadline-title">Relatório semanal · Cardiologia</div>
+              <div class="deadline-meta">Profa. Dra. Ana Lima</div>
+            </div>
+
+            <div class="deadline-item">
+              <div class="deadline-date">Qua · 21.mai · 14h00</div>
+              <div class="deadline-title">Apresentação de caso · IAM</div>
+              <div class="deadline-meta">Discussão clínica · Sala 12</div>
+            </div>
+
+            <div class="deadline-item">
+              <div class="deadline-date">Sex · 23.mai</div>
+              <div class="deadline-title">Prova prática · Semiologia</div>
+              <div class="deadline-meta">HU · 8º período</div>
+            </div>
+          </div>
+
+          <div class="widget">
+            <div class="widget-title">
+              <span>Em alta na comunidade</span>
+            </div>
+
+            <div class="trending-item">
+              <div class="trending-rank">01</div>
+              <div class="trending-title">Manejo da sepse na primeira hora</div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-rank">02</div>
+              <div class="trending-title">Anticoagulação na FA — novos escores</div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-rank">03</div>
+              <div class="trending-title">Acidose metabólica — interpretação do gap</div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
+    </div>
+  </section>

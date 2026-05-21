@@ -1,0 +1,121 @@
+<!-- =============================================== -->
+  <!-- TELA 2 — EVOLUÇÃO                              -->
+  <!-- =============================================== -->
+  <section class="screen" id="screen-2">
+    <div class="app-bar">
+      <div class="app-bar-left">
+        <div class="app-bar-logo">MedCase</div>
+        <nav class="app-nav">
+          <a href="#">Início</a>
+          <a href="#" class="current">Meus Casos</a>
+          <a href="#">Grupos</a>
+          <a href="#">Comunidade</a>
+        </nav>
+      </div>
+      <div class="app-bar-right">
+        <input class="app-search" placeholder="Buscar casos, tags, especialidades…">
+        <div class="avatar">CS</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-meta">
+        <span class="kicker-amber">Linha do tempo</span>
+        <span class="dot"></span>
+        <span>4 evoluções registradas</span>
+        <span class="dot"></span>
+        <span>3 públicas · 1 privada</span>
+      </div>
+
+      <h1 class="page-title">Evolução <em>clínica</em></h1>
+      <p class="page-subtitle">Acompanhamento longitudinal do caso. Cada registro pode ser público (visível ao grupo) ou privado (visível apenas ao autor).</p>
+
+      <div class="case-banner">
+        <div class="case-banner-left">
+          <div>
+            <div class="case-banner-id">MED-2026-0847</div>
+            <div class="case-banner-title">SCA-CSST · J.S.M., 58 anos</div>
+            <div class="case-banner-meta">Cardiologia · Emergência</div>
+          </div>
+          <div class="case-banner-divider"></div>
+          <div>
+            <div class="info-key" style="margin-bottom: 4px;">Status</div>
+            <span class="tag amber">Em monitorização</span>
+          </div>
+        </div>
+        <button class="btn btn-ghost">← Voltar ao caso</button>
+      </div>
+
+      <div class="timeline">
+
+        <div class="evolucao public">
+          <div class="evolucao-header">
+            <div class="avatar" style="background: var(--forest);">CS</div>
+            <div>
+              <div class="evolucao-author">Cauan Silva Oliveira</div>
+              <div class="evolucao-date">17.mai.2026 · 09:42</div>
+            </div>
+            <span class="badge public">Pública</span>
+          </div>
+          <div class="evolucao-body">
+            <em>Admissão.</em> Paciente recebido em sala de emergência, consciente e orientado, queixando-se de dor precordial. ECG mostrou <strong>supra de ST em V2-V6</strong>, compatível com IAM de parede anterior extensa. Acionada hemodinâmica. Troponina inicial: 0.08 ng/mL.
+          </div>
+        </div>
+
+        <div class="evolucao public">
+          <div class="evolucao-header">
+            <div class="avatar" style="background: var(--forest);">GH</div>
+            <div>
+              <div class="evolucao-author">Gabriel Henrique Martins</div>
+              <div class="evolucao-date">17.mai.2026 · 14:15</div>
+            </div>
+            <span class="badge public">Pública</span>
+          </div>
+          <div class="evolucao-body">
+            <em>Pós-CATE.</em> Submetido a angioplastia primária de DA proximal com implante de stent farmacológico (TIMI 3 ao final do procedimento). Encaminhado à UCO estável, sem dor, PA 128/82, FC 78bpm. Iniciada dupla antiagregação e estatina de alta potência.
+          </div>
+        </div>
+
+        <div class="evolucao private">
+          <div class="evolucao-header">
+            <div class="avatar" style="background: var(--muted);">ML</div>
+            <div>
+              <div class="evolucao-author">Maria Luiza Vaz de Almeida</div>
+              <div class="evolucao-date">17.mai.2026 · 22:30</div>
+            </div>
+            <span class="badge private">Privada</span>
+          </div>
+          <div class="evolucao-body">
+            <em>Observação pessoal.</em> Caso interessante para revisão dos critérios de Sgarbossa modificados — paciente apresentava BRE de base que poderia ter mascarado o supradesnivelamento. Estudar para a prova de Cardio na próxima sexta.
+          </div>
+        </div>
+
+        <div class="evolucao public">
+          <div class="evolucao-header">
+            <div class="avatar" style="background: var(--forest);">CS</div>
+            <div>
+              <div class="evolucao-author">Cauan Silva Oliveira</div>
+              <div class="evolucao-date">18.mai.2026 · 08:00</div>
+            </div>
+            <span class="badge public">Pública</span>
+          </div>
+          <div class="evolucao-body">
+            <em>Reavaliação 24h.</em> Paciente assintomático, hemodinamicamente estável. Troponina em queda (pico 18.2 ng/mL). ECG com regressão parcial do supra. FE estimada por ECO: 42%. Mantida conduta, programada alta para enfermaria em 48h.
+          </div>
+        </div>
+
+        <div class="new-evolucao">
+          <div class="new-evolucao-label">Registrar nova evolução</div>
+          <textarea placeholder="Descreva a evolução do paciente, achados de exames, mudanças na conduta…"></textarea>
+          <div class="new-evolucao-footer">
+            <div class="toggle-public">
+              <div class="toggle-switch"></div>
+              <span>Tornar pública para o grupo</span>
+            </div>
+            <button class="btn btn-accent">Publicar Evolução</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
