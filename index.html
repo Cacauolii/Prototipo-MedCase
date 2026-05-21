@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedCase — Protótipo de Telas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Folhas de estilo modulares -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/app-shell.css">
+<link rel="stylesheet" href="css/screen-1-caso.css">
+<link rel="stylesheet" href="css/screen-2-evolucao.css">
+<link rel="stylesheet" href="css/screen-3-grupo.css">
+<link rel="stylesheet" href="css/screen-4-comunidade.css">
+<link rel="stylesheet" href="css/screen-5-dashboard.css">
+<link rel="stylesheet" href="css/screen-6-login.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="presentation">
+
+  <!-- ============ HEADER ============ -->
+  <header class="preso-header">
+    <div class="brand">
+      <div class="brand-mark">M</div>
+      <div>
+        <div class="brand-title">MedCase</div>
+        <div class="brand-sub">Protótipo · Sprint 2 · Apresentação</div>
+      </div>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" data-screen="1">
+        <span class="num">Tela 01</span>
+        <span class="name">Caso Clínico</span>
+      </button>
+      <button class="tab" data-screen="2">
+        <span class="num">Tela 02</span>
+        <span class="name">Evolução</span>
+      </button>
+      <button class="tab" data-screen="3">
+        <span class="num">Tela 03</span>
+        <span class="name">Grupo de Estudo</span>
+      </button>
+      <button class="tab" data-screen="4">
+        <span class="num">Tela 04</span>
+        <span class="name">Comunidade</span>
+      </button>
+      <button class="tab" data-screen="5">
+        <span class="num">Tela 05</span>
+        <span class="name">Dashboard</span>
+      </button>
+      <button class="tab active" data-screen="6">
+        <span class="num">Tela 06</span>
+        <span class="name">Login</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="screen-wrapper">
+
+  <!-- =============================================== -->
+  <!-- TELA 1 — CASO CLÍNICO                          -->
+  <!-- =============================================== -->
+  <section class="screen" id="screen-1">
+    <div class="app-bar">
+      <div class="app-bar-left">
+        <div class="app-bar-logo">MedCase</div>
+        <nav class="app-nav">
+          <a href="#">Início</a>
+          <a href="#" class="current">Meus Casos</a>
+          <a href="#">Grupos</a>
+          <a href="#">Comunidade</a>
+        </nav>
+      </div>
+      <div class="app-bar-right">
+        <input class="app-search" placeholder="Buscar casos, tags, especialidades…">
+        <div class="avatar">CS</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-meta">
+        <span class="kicker-amber">Cardiologia</span>
+        <span class="dot"></span>
+        <span>Caso #MED-2026-0847</span>
+        <span class="dot"></span>
+        <span>Criado em 17.mai.2026</span>
+      </div>
+
+      <h1 class="page-title">Dor torácica em aperto com<br><em>irradiação para mandíbula</em></h1>
+      <p class="page-subtitle">Masculino, 58 anos, hipertenso e diabético, com episódio agudo iniciado há 2 horas — suspeita de Síndrome Coronariana Aguda com supradesnivelamento do segmento ST.</p>
+
+      <div class="case-actions">
+        <button class="btn btn-primary">＋ Adicionar Evolução</button>
+        <button class="btn">Compartilhar na Comunidade</button>
+        <button class="btn">Adicionar a Grupo</button>
+        <button class="btn btn-ghost">Editar</button>
+      </div>
+
+      <div class="case-layout">
+        <div class="case-main">
+
+          <div class="case-section">
+            <div class="section-label">Queixa Principal</div>
+            <p>Dor torácica precordial em aperto, intensidade 8/10, com irradiação para mandíbula e membro superior esquerdo, iniciada há 2 horas. Associada a sudorese profusa, náuseas e sensação de morte iminente. Sem fator de alívio até o momento.</p>
+          </div>
+
+          <div class="case-section">
+            <div class="section-label">Histórico da Doença</div>
+            <p>HAS de longa data, em uso irregular de Losartana 50mg/dia. DM2 há 8 anos, em uso de Metformina. Tabagista (40 maços/ano). Pai com IAM aos 55 anos. Refere episódios prévios de desconforto torácico ao esforço nas últimas 3 semanas, que melhoravam com repouso — sintomas nunca antes investigados.</p>
+          </div>
+
+          <div class="case-section">
+            <div class="section-label">Exame Físico</div>
+            <div class="vitals-grid">
+              <div class="vital">
+                <div class="vital-label">PA</div>
+                <div class="vital-value">156/94 <span class="unit">mmHg</span></div>
+              </div>
+              <div class="vital">
+                <div class="vital-label">FC</div>
+                <div class="vital-value">102 <span class="unit">bpm</span></div>
+              </div>
+              <div class="vital">
+                <div class="vital-label">FR</div>
+                <div class="vital-value">22 <span class="unit">ipm</span></div>
+              </div>
+              <div class="vital">
+                <div class="vital-label">SatO₂</div>
+                <div class="vital-value">96 <span class="unit">% AA</span></div>
+              </div>
+              <div class="vital">
+                <div class="vital-label">Tax</div>
+                <div class="vital-value">36.8 <span class="unit">°C</span></div>
+              </div>
+            </div>
+            <p><strong>AC:</strong> Bulhas rítmicas e normofonéticas, 2 tempos, sem sopros. <strong>AP:</strong> Murmúrio vesicular fisiológico bilateralmente, sem ruídos adventícios. <strong>Abdome:</strong> Flácido, indolor à palpação. <strong>Extremidades:</strong> Sem edema, perfusão capilar preservada.</p>
+          </div>
+
+          <div class="case-section">
+            <div class="section-label">Conduta · Prescrição</div>
+            <ol class="conduta-list">
+              <li>ECG de 12 derivações imediato + monitorização contínua.</li>
+              <li>Troponina seriada (0h / 3h / 6h) + hemograma, coagulograma, função renal.</li>
+              <li>AAS 300mg VO mastigado em dose única.</li>
+              <li>Clopidogrel 300mg VO em dose de ataque.</li>
+              <li>Enoxaparina 1mg/kg SC de 12/12h.</li>
+              <li>Acionar equipe de hemodinâmica para CATE em &lt;90min se ST supra confirmado (porta-balão).</li>
+            </ol>
+          </div>
+
+        </div>
+
+        <aside class="case-sidebar">
+          <div class="info-block">
+            <div class="section-label">Paciente</div>
+            <div class="info-row">
+              <span class="info-key">Iniciais</span>
+              <span class="info-val">J.S.M.</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Idade</span>
+              <span class="info-val">58 anos</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Sexo</span>
+              <span class="info-val">Masculino</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Prontuário</span>
+              <span class="info-val">MED-2026-0847</span>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="section-label">Autoria</div>
+            <div class="info-row">
+              <span class="info-key">Autor</span>
+              <span class="info-val serif">Cauan Silva</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Especialidade</span>
+              <span class="info-val">Cardiologia</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Última edição</span>
+              <span class="info-val">há 12min</span>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="section-label">Tags</div>
+            <div class="tag-list">
+              <span class="tag">#IAM</span>
+              <span class="tag">#SCA-CSST</span>
+              <span class="tag">#Cardiologia</span>
+              <span class="tag amber">#Emergência</span>
+              <span class="tag">#Troponina</span>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="section-label">Mídias Anexadas</div>
+            <div class="media-item">
+              <div class="media-icon">PDF</div>
+              <div class="media-name">ECG_admissao.pdf</div>
+            </div>
+            <div class="media-item">
+              <div class="media-icon">PNG</div>
+              <div class="media-name">Troponina_curva.png</div>
+            </div>
+            <div class="media-item">
+              <div class="media-icon">JPG</div>
+              <div class="media-name">RX_torax_PA.jpg</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================== -->
+  <!-- TELA 2 — EVOLUÇÃO                              -->
+  <!-- =============================================== -->
+  <section class="screen" id="screen-2">
+    <div class="app-bar">
+      <div class="app-bar-left">
+        <div class="app-bar-logo">MedCase</div>
+        <nav class="app-nav">
+          <a href="#">Início</a>
+          <a href="#" class="current">Meus Casos</a>
+          <a href="#">Grupos</a>
+          <a href="#">Comunidade</a>
+        </nav>
+      </div>
+      <div class="app-bar-right">
+        <input class="app-search" placeholder="Buscar casos, tags, especialidades…">
+        <div class="avatar">CS</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-meta">
+        <span class="kicker-amber">Linha do tempo</span>
+        <span class="dot"></span>
+        <span>4 evoluções registradas</span>
+        <span class="dot"></span>
+        <span>3 públicas · 1 privada</span>
+      </div>
+
+      <h1 class="page-title">Evolução <em>clínica</em></h1>
+      <p class="page-subtitle">Acompanhamento longitudinal do caso. Cada registro pode ser público (visível ao grupo) ou privado (visível apenas ao autor).</p>
+
+      <div class="case-banner">
+        <div class="case-banner-left">
+          <div>
+            <div class="case-banner-id">MED-2026-0847</div>
+            <div class="case-banner-title">SCA-CSST · J.S.M., 58 anos</div>
+            <div class="case-banner-meta">Cardiologia · Emergência</div>
+          </div>
+          <div class="case-banner-divider"></div>
+          <div>
+            <div class="info-key" style="margin-bottom: 4px;">Status</div>
+            <span class="tag amber">Em monitorização</span>
+          </div>
+        </div>
+        <button class="btn btn-ghost">← Voltar ao caso</button>
+      </div>
+
+      <div class="timeline">
+
+        <div class="evolucao public">
+          <div class="evolucao-header">
+            <div class="avatar" style="background: var(--forest);">CS</div>
+            <div>
+              <div class="evolucao-author">Cauan Silva Oliveira</div>
+              <div class="evolucao-date">17.mai.2026 · 09:42</div>
+            </div>
+            <span class="badge public">Pública</span>
+          </div>
+          <div class="evolucao-body">
+            <em>Admissão.</em> Paciente recebido em sala de emergência, consciente e orientado, queixando-se de dor precordial. ECG mostrou <strong>supra de ST em V2-V6</strong>, compatível com IAM de parede anterior extensa. Acionada hemodinâmica. Troponina inicial: 0.08 ng/mL.
+          </div>
+        </div>
+
+        <div class="evolucao public">
+          <div class="evolucao-header">
+            <div class="avatar" style="background: var(--forest);">GH</div>
+            <div>
+              <div class="evolucao-author">Gabriel Henrique Martins</div>
+              <div class="evolucao-date">17.mai.2026 · 14:15</div>
+            </div>
+            <span class="badge public">Pública</span>
+          </div>
+          <div class="evolucao-body">
+            <em>Pós-CATE.</em> Submetido a angioplastia primária de DA proximal com implante de stent farmacológico (TIMI 3 ao final do procedimento). Encaminhado à UCO estável, sem dor, PA 128/82, FC 78bpm. Iniciada dupla antiagregação e estatina de alta potência.
+          </div>
+        </div>
+
+        <div class="evolucao private">
+          <div class="evolucao-header">
+            <div class="avatar" style="background: var(--muted);">ML</div>
+            <div>
+              <div class="evolucao-author">Maria Luiza Vaz de Almeida</div>
+              <div class="evolucao-date">17.mai.2026 · 22:30</div>
+            </div>
+            <span class="badge private">Privada</span>
+          </div>
+          <div class="evolucao-body">
+            <em>Observação pessoal.</em> Caso interessante para revisão dos critérios de Sgarbossa modificados — paciente apresentava BRE de base que poderia ter mascarado o supradesnivelamento. Estudar para a prova de Cardio na próxima sexta.
+          </div>
+        </div>
+
+        <div class="evolucao public">
+          <div class="evolucao-header">
+            <div class="avatar" style="background: var(--forest);">CS</div>
+            <div>
+              <div class="evolucao-author">Cauan Silva Oliveira</div>
+              <div class="evolucao-date">18.mai.2026 · 08:00</div>
+            </div>
+            <span class="badge public">Pública</span>
+          </div>
+          <div class="evolucao-body">
+            <em>Reavaliação 24h.</em> Paciente assintomático, hemodinamicamente estável. Troponina em queda (pico 18.2 ng/mL). ECG com regressão parcial do supra. FE estimada por ECO: 42%. Mantida conduta, programada alta para enfermaria em 48h.
+          </div>
+        </div>
+
+        <div class="new-evolucao">
+          <div class="new-evolucao-label">Registrar nova evolução</div>
+          <textarea placeholder="Descreva a evolução do paciente, achados de exames, mudanças na conduta…"></textarea>
+          <div class="new-evolucao-footer">
+            <div class="toggle-public">
+              <div class="toggle-switch"></div>
+              <span>Tornar pública para o grupo</span>
+            </div>
+            <button class="btn btn-accent">Publicar Evolução</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================== -->
+  <!-- TELA 3 — GRUPO DE ESTUDO                       -->
+  <!-- =============================================== -->
+  <section class="screen" id="screen-3">
+    <div class="app-bar">
+      <div class="app-bar-left">
+        <div class="app-bar-logo">MedCase</div>
+        <nav class="app-nav">
+          <a href="#">Início</a>
+          <a href="#">Meus Casos</a>
+          <a href="#" class="current">Grupos</a>
+          <a href="#">Comunidade</a>
+        </nav>
+      </div>
+      <div class="app-bar-right">
+        <input class="app-search" placeholder="Buscar casos, tags, especialidades…">
+        <div class="avatar">CS</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-meta">
+        <span class="kicker-amber">Grupo de Estudo</span>
+        <span class="dot"></span>
+        <span>Criado por Cauan Silva</span>
+        <span class="dot"></span>
+        <span>23.mar.2026</span>
+      </div>
+
+      <div class="group-hero">
+        <div>
+          <h1 class="page-title">Cardiologia Clínica<br><em>— Turma 2026/1</em></h1>
+          <p class="page-subtitle">Discussão semanal de casos cardiológicos para alunos do 8º período. Casos selecionados pelo preceptor da disciplina para revisão antes das provas práticas no HU.</p>
+        </div>
+        <div class="group-code-card">
+          <div class="group-code-label">Código de Acesso</div>
+          <div class="group-code-value">MEDCAR-2026</div>
+          <div class="group-code-action">📋 Copiar convite →</div>
+        </div>
+      </div>
+
+      <div class="group-stats">
+        <div class="stat">
+          <div class="stat-num">12<span class="small">/30</span></div>
+          <div class="stat-label">Membros</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">24</div>
+          <div class="stat-label">Casos Compartilhados</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">87</div>
+          <div class="stat-label">Evoluções Públicas</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8</div>
+          <div class="stat-label">Especialidades</div>
+        </div>
+      </div>
+
+      <div class="group-tabs">
+        <div class="group-tab active">Casos <span class="count">24</span></div>
+        <div class="group-tab">Membros <span class="count">12</span></div>
+        <div class="group-tab">Discussão <span class="count">31</span></div>
+        <div class="group-tab">Sobre</div>
+      </div>
+
+      <div class="case-grid">
+
+        <div class="case-card">
+          <div class="case-card-spec">Cardiologia · Emergência</div>
+          <div class="case-card-title">SCA-CSST com dor irradiada para mandíbula</div>
+          <div class="case-card-patient">J.S.M. · 58a · M · #MED-0847</div>
+          <div class="case-card-footer">
+            <div class="case-card-author">
+              <div class="av">CS</div>
+              <span>Cauan Silva</span>
+            </div>
+            <span>há 6h</span>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card-spec">Pneumologia</div>
+          <div class="case-card-title">PAC grave em idoso com derrame parapneumônico</div>
+          <div class="case-card-patient">A.R.B. · 73a · F · #MED-0832</div>
+          <div class="case-card-footer">
+            <div class="case-card-author">
+              <div class="av">ML</div>
+              <span>Maria Luiza</span>
+            </div>
+            <span>há 1d</span>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card-spec">Neurologia · Emergência</div>
+          <div class="case-card-title">AVCi de território de ACM esquerda em janela</div>
+          <div class="case-card-patient">P.O.C. · 65a · M · #MED-0815</div>
+          <div class="case-card-footer">
+            <div class="case-card-author">
+              <div class="av">GH</div>
+              <span>Gabriel Martins</span>
+            </div>
+            <span>há 2d</span>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card-spec">Endocrinologia</div>
+          <div class="case-card-title">Cetoacidose diabética em diabético tipo 1</div>
+          <div class="case-card-patient">L.V.S. · 22a · F · #MED-0801</div>
+          <div class="case-card-footer">
+            <div class="case-card-author">
+              <div class="av">CS</div>
+              <span>Cauan Silva</span>
+            </div>
+            <span>há 4d</span>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card-spec">Gastroenterologia</div>
+          <div class="case-card-title">Hemorragia digestiva alta por varizes esofágicas</div>
+          <div class="case-card-patient">R.M.S. · 54a · M · #MED-0789</div>
+          <div class="case-card-footer">
+            <div class="case-card-author">
+              <div class="av">ML</div>
+              <span>Maria Luiza</span>
+            </div>
+            <span>há 5d</span>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card-spec">Nefrologia</div>
+          <div class="case-card-title">IRA pré-renal por desidratação severa</div>
+          <div class="case-card-patient">T.A.F. · 81a · F · #MED-0776</div>
+          <div class="case-card-footer">
+            <div class="case-card-author">
+              <div class="av">GH</div>
+              <span>Gabriel Martins</span>
+            </div>
+            <span>há 1sem</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================== -->
+  <!-- TELA 4 — POST COMUNIDADE                       -->
+  <!-- =============================================== -->
+  <section class="screen" id="screen-4">
+    <div class="app-bar">
+      <div class="app-bar-left">
+        <div class="app-bar-logo">MedCase</div>
+        <nav class="app-nav">
+          <a href="#">Início</a>
+          <a href="#">Meus Casos</a>
+          <a href="#">Grupos</a>
+          <a href="#" class="current">Comunidade</a>
+        </nav>
+      </div>
+      <div class="app-bar-right">
+        <input class="app-search" placeholder="Buscar casos, tags, especialidades…">
+        <div class="avatar">CS</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="page-meta">
+        <span class="kicker-amber">Comunidade aberta</span>
+        <span class="dot"></span>
+        <span>Casos compartilhados publicamente</span>
+        <span class="dot"></span>
+        <span>1.247 alunos ativos</span>
+      </div>
+
+      <h1 class="page-title">Comunidade <em>MedCase</em></h1>
+      <p class="page-subtitle">Casos clínicos publicados pela comunidade. Endosse casos didáticos, vote nos mais relevantes e denuncie conteúdos inadequados.</p>
+
+      <div class="feed-layout">
+        <div class="feed-main">
+
+          <div class="feed-controls">
+            <div class="sort-group">
+              <span class="sort-opt active">Em alta</span>
+              <span class="sort-opt">Recentes</span>
+              <span class="sort-opt">Mais endossados</span>
+              <span class="sort-opt">Por especialidade</span>
+            </div>
+            <button class="btn btn-accent">＋ Publicar Caso</button>
+          </div>
+
+          <article class="post">
+            <div class="post-votes">
+              <div class="vote-arrow up active">▲</div>
+              <div class="vote-score">142</div>
+              <div class="vote-arrow">▼</div>
+            </div>
+            <div class="post-body">
+              <div class="post-header">
+                <span class="author">Cauan Silva Oliveira</span>
+                <span class="sep">·</span>
+                <span>Cardiologia</span>
+                <span class="sep">·</span>
+                <span>há 6 horas</span>
+              </div>
+              <h2 class="post-title">SCA-CSST com apresentação atípica — dor irradiada para mandíbula em paciente de 58 anos</h2>
+              <p class="post-preview">Masculino, 58 anos, hipertenso e diabético, tabagista pesado, com episódio agudo de dor precordial em aperto há 2 horas. ECG mostrou supra de ST em V2-V6. Caso ilustra a importância de reconhecer apresentações atípicas em pacientes de alto risco cardiovascular…</p>
+              <div class="post-meta-row">
+                <span class="endorse-pill">⭐ 47 endossos</span>
+                <span class="score-bar">Relevância 8.7</span>
+                <span class="post-meta-item"><span class="icon">💬</span> 23 comentários</span>
+                <span class="post-meta-item"><span class="icon">🔖</span> 89 salvos</span>
+                <span class="post-meta-item" style="margin-left: auto;">
+                  <span class="tag" style="font-size: 10px;">#IAM</span>
+                  <span class="tag" style="font-size: 10px;">#SCA</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <div class="post-votes">
+              <div class="vote-arrow up">▲</div>
+              <div class="vote-score">98</div>
+              <div class="vote-arrow">▼</div>
+            </div>
+            <div class="post-body">
+              <div class="post-header">
+                <span class="author">Maria Luiza Vaz de Almeida</span>
+                <span class="sep">·</span>
+                <span>Pneumologia</span>
+                <span class="sep">·</span>
+                <span>há 1 dia</span>
+              </div>
+              <h2 class="post-title">Pneumonia adquirida na comunidade grave em idosa com derrame parapneumônico complicado</h2>
+              <p class="post-preview">Feminina, 73 anos, hipertensa, com tosse produtiva, dispneia progressiva e febre há 5 dias. RX mostrou consolidação em LID com derrame extenso. Caso discute critérios de gravidade (CURB-65), indicação de toracocentese e escalonamento de antibioticoterapia empírica…</p>
+              <div class="post-meta-row">
+                <span class="endorse-pill">⭐ 31 endossos</span>
+                <span class="score-bar">Relevância 7.4</span>
+                <span class="post-meta-item"><span class="icon">💬</span> 15 comentários</span>
+                <span class="post-meta-item"><span class="icon">🔖</span> 52 salvos</span>
+                <span class="post-meta-item" style="margin-left: auto;">
+                  <span class="tag" style="font-size: 10px;">#PAC</span>
+                  <span class="tag" style="font-size: 10px;">#CURB-65</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <div class="post-votes">
+              <div class="vote-arrow up">▲</div>
+              <div class="vote-score">76</div>
+              <div class="vote-arrow">▼</div>
+            </div>
+            <div class="post-body">
+              <div class="post-header">
+                <span class="author">Gabriel Henrique Martins</span>
+                <span class="sep">·</span>
+                <span>Neurologia</span>
+                <span class="sep">·</span>
+                <span>há 2 dias</span>
+              </div>
+              <h2 class="post-title">AVC isquêmico de território de ACM esquerda em janela terapêutica — decisão de trombólise</h2>
+              <p class="post-preview">Masculino, 65 anos, fibrilação atrial sem anticoagulação, com afasia de expressão e hemiparesia D iniciadas há 90 minutos. NIHSS 14. Caso debate critérios de inclusão/exclusão para alteplase e indicação de trombectomia mecânica no contexto de oclusão de grande vaso…</p>
+              <div class="post-meta-row">
+                <span class="endorse-pill">⭐ 24 endossos</span>
+                <span class="score-bar">Relevância 6.9</span>
+                <span class="post-meta-item"><span class="icon">💬</span> 11 comentários</span>
+                <span class="post-meta-item"><span class="icon">🔖</span> 38 salvos</span>
+                <span class="post-meta-item" style="margin-left: auto;">
+                  <span class="tag" style="font-size: 10px;">#AVCi</span>
+                  <span class="tag" style="font-size: 10px;">#Trombólise</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <aside class="feed-sidebar">
+          <div class="sidebar-block">
+            <div class="sidebar-title">Em alta esta semana</div>
+            <div class="trending-item">
+              <div class="trending-rank">01</div>
+              <div class="trending-title">Manejo da sepse na primeira hora — bundle 1h</div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-rank">02</div>
+              <div class="trending-title">Anticoagulação na FA — novos escores</div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-rank">03</div>
+              <div class="trending-title">Acidose metabólica — interpretação do gap</div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-rank">04</div>
+              <div class="trending-title">Suporte ventilatório em pacientes obesos</div>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="sidebar-title">Tags populares</div>
+            <div class="tag-cloud">
+              <span class="tag">#Cardiologia</span>
+              <span class="tag">#Emergência</span>
+              <span class="tag">#UTI</span>
+              <span class="tag amber">#Sepse</span>
+              <span class="tag">#Pediatria</span>
+              <span class="tag">#Ginecologia</span>
+              <span class="tag">#AVC</span>
+              <span class="tag">#IAM</span>
+              <span class="tag">#Cirurgia</span>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="sidebar-title">Diretrizes da comunidade</div>
+            <p style="font-size: 11px; color: var(--muted); line-height: 1.6;">Casos publicados devem manter <strong>anonimização total</strong> do paciente. Conteúdos com dados identificáveis serão denunciados e removidos conforme a LGPD.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================== -->
+  <!-- TELA 5 — DASHBOARD / INÍCIO                    -->
+  <!-- =============================================== -->
+  <section class="screen" id="screen-5">
+    <div class="app-bar">
+      <div class="app-bar-left">
+        <div class="app-bar-logo">MedCase</div>
+        <nav class="app-nav">
+          <a href="#" class="current">Início</a>
+          <a href="#">Meus Casos</a>
+          <a href="#">Grupos</a>
+          <a href="#">Comunidade</a>
+        </nav>
+      </div>
+      <div class="app-bar-right">
+        <input class="app-search" placeholder="Buscar casos, tags, especialidades…">
+        <div class="avatar">CS</div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- Hero -->
+      <div class="dash-hero">
+        <div class="dash-hero-left">
+          <h1>Bom dia, <em>Cauan.</em></h1>
+          <p>Você tem <strong>3 evoluções pendentes</strong> em 2 casos ativos e <strong>4 menções</strong> não lidas em seus grupos. Bom estudo.</p>
+        </div>
+        <div class="dash-hero-right">
+          <div class="dash-hero-date">17 de maio de 2026</div>
+          <div class="dash-hero-weekday">Domingo</div>
+          <div class="dash-hero-temp">19º · Belo Horizonte</div>
+        </div>
+      </div>
+
+      <!-- Metrics -->
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-label">Casos Ativos</div>
+          <div class="metric-value">12</div>
+          <div class="metric-trend up">↑ 3 esta semana</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Evoluções (7d)</div>
+          <div class="metric-value">23</div>
+          <div class="metric-trend up">↑ 18% vs semana passada</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Grupos</div>
+          <div class="metric-value">4</div>
+          <div class="metric-trend">2 ativos hoje</div>
+        </div>
+        <div class="metric-card highlight">
+          <div class="metric-label">Endossos Recebidos</div>
+          <div class="metric-value">47<span class="unit">⭐</span></div>
+          <div class="metric-trend up">↑ Top 8% da turma</div>
+        </div>
+      </div>
+
+      <div class="dash-layout">
+        <div class="dash-main">
+
+          <!-- Continue de onde parou -->
+          <div class="dash-section">
+            <div class="dash-section-header">
+              <h2 class="dash-section-title">Continue de onde <em>parou</em></h2>
+              <a class="dash-section-link">Ver todos os casos →</a>
+            </div>
+            <div class="continue-grid">
+
+              <div class="continue-card">
+                <span class="continue-card-status pending">Pendente</span>
+                <div class="continue-card-spec">Cardiologia</div>
+                <div class="continue-card-title">SCA-CSST com dor irradiada para mandíbula</div>
+                <div class="continue-card-meta">
+                  <span>MED-0847</span>
+                  <span>editado há 12min</span>
+                </div>
+              </div>
+
+              <div class="continue-card">
+                <span class="continue-card-status active">Em andamento</span>
+                <div class="continue-card-spec">Endocrinologia</div>
+                <div class="continue-card-title">Cetoacidose diabética em DM1 jovem</div>
+                <div class="continue-card-meta">
+                  <span>MED-0801</span>
+                  <span>3 evoluções</span>
+                </div>
+              </div>
+
+              <div class="continue-card">
+                <span class="continue-card-status review">Revisão</span>
+                <div class="continue-card-spec">Pneumologia</div>
+                <div class="continue-card-title">TEP submaciço em pós-operatório</div>
+                <div class="continue-card-meta">
+                  <span>MED-0792</span>
+                  <span>6 evoluções</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Activity feed -->
+          <div class="dash-section">
+            <div class="dash-section-header">
+              <h2 class="dash-section-title">Atividade <em>dos seus grupos</em></h2>
+              <a class="dash-section-link">Ver tudo →</a>
+            </div>
+            <div class="activity-feed">
+
+              <div class="activity-row">
+                <div class="activity-avatar">GH</div>
+                <div class="activity-text"><strong>Gabriel Henrique</strong> adicionou uma evolução em <a>SCA-CSST · J.S.M.</a> no grupo <strong>Cardiologia Clínica</strong></div>
+                <div class="activity-time">há 14min</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar muted">ML</div>
+                <div class="activity-text"><strong>Maria Luiza</strong> publicou um novo caso: <a>PAC grave com derrame parapneumônico</a></div>
+                <div class="activity-time">há 1h</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar amber">@</div>
+                <div class="activity-text">Você foi mencionado por <strong>Profa. Dra. Ana Lima</strong> em <a>Cetoacidose diabética</a></div>
+                <div class="activity-time">há 2h</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar">GH</div>
+                <div class="activity-text"><strong>Gabriel Henrique</strong> endossou seu caso <a>SCA-CSST com dor irradiada</a></div>
+                <div class="activity-time">há 4h</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar muted">ML</div>
+                <div class="activity-text"><strong>Maria Luiza</strong> entrou no grupo <strong>Emergências Clínicas — 2026/1</strong></div>
+                <div class="activity-time">há 1d</div>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-avatar">SR</div>
+                <div class="activity-text"><strong>Sistema</strong> · O grupo <strong>Cardiologia Clínica</strong> atingiu <strong>24 casos compartilhados</strong> 🎉</div>
+                <div class="activity-time">há 1d</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Specialty distribution -->
+          <div class="dash-section" style="margin-bottom: 0;">
+            <div class="dash-section-header">
+              <h2 class="dash-section-title">Seus casos <em>por especialidade</em></h2>
+              <a class="dash-section-link">12 casos no total</a>
+            </div>
+
+            <div class="specialty-bar">
+              <div class="specialty-seg" style="background: #1f3a32; width: 33%;">33%</div>
+              <div class="specialty-seg" style="background: #c87f3b; width: 25%;">25%</div>
+              <div class="specialty-seg" style="background: #4a6d8c; width: 17%;">17%</div>
+              <div class="specialty-seg" style="background: #8c4a6d; width: 12%;">12%</div>
+              <div class="specialty-seg" style="background: #4a7d5a; width: 8%;">8%</div>
+              <div class="specialty-seg" style="background: #7a7368; width: 5%;">5%</div>
+            </div>
+
+            <div class="specialty-legend">
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #1f3a32;"></span>
+                <span>Cardiologia</span>
+                <span class="specialty-count">4</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #c87f3b;"></span>
+                <span>Endocrinologia</span>
+                <span class="specialty-count">3</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #4a6d8c;"></span>
+                <span>Pneumologia</span>
+                <span class="specialty-count">2</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #8c4a6d;"></span>
+                <span>Neurologia</span>
+                <span class="specialty-count">1</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #4a7d5a;"></span>
+                <span>Gastroenterologia</span>
+                <span class="specialty-count">1</span>
+              </div>
+              <div class="specialty-legend-item">
+                <span class="specialty-dot" style="background: #7a7368;"></span>
+                <span>Nefrologia</span>
+                <span class="specialty-count">1</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="dash-sidebar">
+
+          <div class="widget">
+            <div class="widget-title">
+              <span>Meus grupos</span>
+              <span class="meta">4 ativos</span>
+            </div>
+
+            <div class="group-mini">
+              <div class="group-mini-icon">C</div>
+              <div>
+                <div class="group-mini-name">Cardiologia Clínica</div>
+                <div class="group-mini-meta">12 membros · 24 casos</div>
+              </div>
+              <span class="group-mini-badge">3</span>
+            </div>
+
+            <div class="group-mini">
+              <div class="group-mini-icon amber">E</div>
+              <div>
+                <div class="group-mini-name">Emergências Clínicas</div>
+                <div class="group-mini-meta">18 membros · 41 casos</div>
+              </div>
+              <span class="group-mini-badge">1</span>
+            </div>
+
+            <div class="group-mini">
+              <div class="group-mini-icon info">M</div>
+              <div>
+                <div class="group-mini-name">MedCase Bocaiuva</div>
+                <div class="group-mini-meta">8 membros · 12 casos</div>
+              </div>
+            </div>
+
+            <div class="group-mini">
+              <div class="group-mini-icon muted">R</div>
+              <div>
+                <div class="group-mini-name">Revisão · Prova HU</div>
+                <div class="group-mini-meta">6 membros · 9 casos</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="widget">
+            <div class="widget-title">
+              <span>Próximas entregas</span>
+            </div>
+
+            <div class="deadline-item">
+              <div class="deadline-date">Seg · 19.mai · 23h59</div>
+              <div class="deadline-title">Relatório semanal · Cardiologia</div>
+              <div class="deadline-meta">Profa. Dra. Ana Lima</div>
+            </div>
+
+            <div class="deadline-item">
+              <div class="deadline-date">Qua · 21.mai · 14h00</div>
+              <div class="deadline-title">Apresentação de caso · IAM</div>
+              <div class="deadline-meta">Discussão clínica · Sala 12</div>
+            </div>
+
+            <div class="deadline-item">
+              <div class="deadline-date">Sex · 23.mai</div>
+              <div class="deadline-title">Prova prática · Semiologia</div>
+              <div class="deadline-meta">HU · 8º período</div>
+            </div>
+          </div>
+
+          <div class="widget">
+            <div class="widget-title">
+              <span>Em alta na comunidade</span>
+            </div>
+
+            <div class="trending-item">
+              <div class="trending-rank">01</div>
+              <div class="trending-title">Manejo da sepse na primeira hora</div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-rank">02</div>
+              <div class="trending-title">Anticoagulação na FA — novos escores</div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-rank">03</div>
+              <div class="trending-title">Acidose metabólica — interpretação do gap</div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================== -->
+  <!-- TELA 6 — LOGIN                                 -->
+  <!-- =============================================== -->
+  <section class="screen login-screen active" id="screen-6">
+    <div class="login-layout">
+
+      <!-- LEFT — Atmosphere -->
+      <div class="login-left">
+
+        <div class="login-brand">
+          <div class="login-brand-mark">M</div>
+          <div>
+            <div class="login-brand-text">MedCase</div>
+            <div>Casos clínicos para futuros médicos</div>
+          </div>
+        </div>
+
+        <div class="login-quote">
+          <span class="login-quote-mark">"</span>
+          <div class="login-quote-text">A medicina <em>aprende-se</em> ao lado do leito do doente, não nos livros de uma biblioteca.</div>
+          <div class="login-quote-author">William Osler · 1849–1919</div>
+        </div>
+
+        <div class="login-stats">
+          <div>
+            <div class="login-stat-num">1.247<span class="plus">+</span></div>
+            <div class="login-stat-label">Alunos ativos</div>
+          </div>
+          <div>
+            <div class="login-stat-num">3.892</div>
+            <div class="login-stat-label">Casos compartilhados</div>
+          </div>
+          <div>
+            <div class="login-stat-num">28</div>
+            <div class="login-stat-label">Universidades</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT — Form -->
+      <div class="login-right">
+        <div class="login-form-wrap">
+
+          <div class="login-eyebrow">Acesso restrito</div>
+          <h1 class="login-title">Bem-vindo<br><em>de volta.</em></h1>
+          <p class="login-subtitle">Entre com seu e-mail acadêmico para acessar seus casos, grupos e a comunidade MedCase.</p>
+
+          <div class="field-group">
+            <div class="field-label">
+              <span>E-mail acadêmico</span>
+            </div>
+            <input class="field-input" type="email" placeholder="seu.nome@universidade.edu.br" value="cauan.silva@unifei.edu.br">
+          </div>
+
+          <div class="field-group">
+            <div class="field-label">
+              <span>Senha</span>
+              <a class="forgot">Esqueci minha senha</a>
+            </div>
+            <div class="password-wrap">
+              <input class="field-input" type="password" placeholder="••••••••••••" value="••••••••••••">
+              <button class="password-toggle">mostrar</button>
+            </div>
+          </div>
+
+          <div class="remember-row">
+            <div class="checkbox checked"></div>
+            <span>Manter-me conectado neste dispositivo</span>
+          </div>
+
+          <button class="btn-login">Entrar no MedCase</button>
+
+          <div class="divider">ou continue com</div>
+
+          <button class="btn-sso">
+            <span class="g-icon">G</span>
+            <span>Google Acadêmico · SSO institucional</span>
+          </button>
+
+          <div class="login-footer">
+            Ainda não tem conta?<a>Solicite acesso institucional →</a>
+          </div>
+
+          <div class="login-legal">
+            Ao entrar, você concorda com os <a>Termos de Uso</a> e a <a>Política de Privacidade</a>.<br>
+            Plataforma em conformidade com a LGPD (Lei 13.709/2018).
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  </div>
+
+  <!-- ============ Footer entity tag ============ -->
+  <div class="footer-note">
+    <span>MedCase · Sistema de Casos Clínicos para Estudantes de Medicina · Sprint Review</span>
+    <span class="entity-pill" id="entity-tag">
+      <span class="dot"></span>
+      <span id="entity-name">db.Model · Usuario · autenticação</span>
+    </span>
+  </div>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
